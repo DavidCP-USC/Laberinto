@@ -1,5 +1,0 @@
-﻿  main.cpp
-C:\Users\34634\Desktop\Lab\Lab\main.cpp(32,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\34634\Desktop\Lab\Lab\main.cpp(33,34): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\34634\Desktop\Lab\Lab\main.cpp(34,39): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  Lab.vcxproj -> C:\Users\34634\Desktop\Lab\Debug\Lab.exe
