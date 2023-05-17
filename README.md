@@ -1,2 +1,2 @@
 # Laberinto
-Este código tiene cámara que va muy bien con ratón, pero ahora no me dibujar ningún cubo y no tengo la más remota idea de por qué no lo hace.
+Este código va bien, tengo cubos, pero sin culo JAJAJAJA. Nos sirve si giramos bien los cubos.
