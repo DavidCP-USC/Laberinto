@@ -1,4 +1,0 @@
-﻿  main.cpp
-C:\Users\aovid\Downloads\UniStuff\CoGa\Practicas\Lab\Lab\main.cpp(120,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\aovid\Downloads\UniStuff\CoGa\Practicas\Lab\Lab\main.cpp(121,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  Lab.vcxproj -> C:\Users\aovid\Downloads\UniStuff\CoGa\Practicas\Lab\Debug\Lab.exe
