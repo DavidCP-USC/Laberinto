@@ -14,7 +14,7 @@ public:
 	void crearLaberinto(Shader shaderProgram, unsigned int VAOMuro);
 private:
 	//Salto de linea
-	static const unsigned int salto = 10;
+	static const unsigned int salto = 11;
 	//Array donde se guardan el layout del mapa
 	std::vector<char> layout = {};
 	//Archivo de donde se lee el mapa

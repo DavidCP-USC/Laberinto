@@ -81,7 +81,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>D:\CoGa\Librerias\glad y includes\include_lib;D:\CoGa\Librerias\glad y includes\glad;%(AdditionalIncludeDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\CoGa\Librerias\glad y includes\include_lib;D:\CoGa\Librerias\glad y includes\glad;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>glfw3.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -134,19 +134,21 @@
     <ClInclude Include="Cubo.h" />
     <ClInclude Include="esfera.h" />
     <ClInclude Include="Mapa.h" />
+    <ClInclude Include="Suelo.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\glad.c" />
     <ClCompile Include="Cubo.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Mapa.cpp" />
+    <ClCompile Include="Suelo.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\shader.frag" />
     <None Include="..\shader.vert" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\map.txt" />
+    <Text Include="map.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

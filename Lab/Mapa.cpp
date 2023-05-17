@@ -36,8 +36,9 @@ void Mapa::crearLaberinto(Shader shaderProgram, unsigned int VAOMuro)
 	//Necesito las coordenadas de cada uno de los cubos que van a formar el muro, se van a ir colocando en un orden preestablecido
 	glm::vec3 coordenadas = { -100.0f, 0.0f, 100.0f };
 	//Estos factores me sirven para escalar los cubos sobre el eje x y sobre el eje z para colocarlos uno al lado del otro
-	glm::vec3 escala = { 5.0f, 7.0f, 0.5f };
+	glm::vec3 escala = { 5.0f, 7.0f, 5.0f };
 	//Hay que pasar por el layout
+	glBindVertexArray(VAOMuro);
 	for (int i = 0; i < layout.size(); i++)
 	{
 		if(layout[i] == '1')
@@ -45,19 +46,21 @@ void Mapa::crearLaberinto(Shader shaderProgram, unsigned int VAOMuro)
 			//Matriz de transformación
 			glm::mat4 transform = glm::mat4();
 			/*Primero escalamos los cubos para que parezcan unos muros, después los colocamos, el orden es scale-translate*/
-			glm::translate(transform, coordenadas);
-			glm::scale(transform, escala);
+			transform = glm::translate(transform, coordenadas);
+			transform = glm::scale(transform, escala);
 			//Ponemos la matriz en el shader
 			shaderProgram.setMat4("transform", transform);
+			shaderProgram.setVec3("ourColor", glm::vec3(1.0f, 0.0f, 0.0f));
 			//Renderizar el cubo
-			glBindVertexArray(VAOMuro);
 			glDrawArrays(GL_TRIANGLES, 0, 36);
 		}
 		//Ahora que nos hemos movido, hay que cambiar las coordenadas
 		coordenadas.x += escala.x;
 		//Cada 10 repeticiones hay que baja en el eje z por el salto
-		if(i % salto == 0)
+		if(i != 0 && i % salto == salto-1){
 			coordenadas.z -= escala.z;
+			coordenadas.x = -100.0f;
+		}
 	}
 }
 
