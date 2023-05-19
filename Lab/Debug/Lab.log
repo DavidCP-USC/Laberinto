@@ -1,5 +1,5 @@
 ﻿  main.cpp
-C:\Users\34634\Desktop\Lab\Lab\main.cpp(32,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\34634\Desktop\Lab\Lab\main.cpp(33,34): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\34634\Desktop\Lab\Lab\main.cpp(34,39): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  Lab.vcxproj -> C:\Users\34634\Desktop\Lab\Debug\Lab.exe
+D:\Examenes\CoGa\Laberinto-camaraRaton2\Lab\main.cpp(123,16): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+D:\Examenes\CoGa\Laberinto-camaraRaton2\Lab\main.cpp(124,16): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+LINK : warning LNK4098: la biblioteca predeterminada'MSVCRT' entra en conflicto con otras bibliotecas; use la biblioteca /NODEFAULTLIB:biblioteca
+  Lab.vcxproj -> D:\Examenes\CoGa\Laberinto-camaraRaton2\Debug\Lab.exe

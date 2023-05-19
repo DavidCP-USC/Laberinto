@@ -27,6 +27,9 @@
     <ClInclude Include="esfera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Suelo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\glad.c">
@@ -41,18 +44,21 @@
     <ClCompile Include="Cubo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Suelo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\shader.frag">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="..\shader.vert">
-      <Filter>Resource Files</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="..\map.txt">
+    <Text Include="map.txt">
       <Filter>Resource Files</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader.vert">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
